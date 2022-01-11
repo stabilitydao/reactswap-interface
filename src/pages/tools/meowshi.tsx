@@ -1,5 +1,5 @@
 import { ArrowDownIcon, InformationCircleIcon } from '@heroicons/react/solid'
-import { ChainId, Currency, Token } from '@sushiswap/sdk'
+import { ChainId, Currency, Token } from '@reactswap/sdk'
 import { MEOW, SUSHI, XSUSHI } from '../../constants'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 
@@ -133,8 +133,8 @@ export default function Meowshi() {
   return (
     <Container id="meowshi-page" className="py-4 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Meowshi | Sushi</title>
-        <meta key="description" name="description" content="SushiSwap Meowshi..." />
+        <title>Meowshi | React</title>
+        <meta key="description" name="description" content="ReactSwap Meowshi..." />
       </Head>
 
       <div className="z-0 relative mb-[-38px] md:mb-[-54px] ml-0 md:ml-4 flex justify-between gap-6 items-center">

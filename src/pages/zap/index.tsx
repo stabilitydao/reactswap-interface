@@ -13,7 +13,7 @@ import {
   Trade,
   WNATIVE,
   ZAPPER_ADDRESS,
-} from '@sushiswap/sdk'
+} from '@reactswap/sdk'
 import Column, { AutoColumn } from '../../components/Column'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { computeRealizedLPFeePercent, warningSeverity } from '../../functions/prices'
@@ -269,11 +269,11 @@ export default function Zap() {
   return (
     <>
       <Head>
-        <title>{i18n._(t`Zap`)} | Sushi</title>
+        <title>{i18n._(t`Zap`)} | React</title>
         <meta
           key="description"
           name="description"
-          content="SushiSwap allows for swapping of ERC20 compatible tokens across multiple networks"
+          content="ReactSwap allows for swapping of ERC20 compatible tokens across multiple networks"
         />
       </Head>
       {!poolAddress ? (

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '@sushiswap/sdk'
+import { Currency, CurrencyAmount, Token } from '@reactswap/sdk'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useClaimCallback, useUserUnclaimedAmount } from '../../state/claim/weekly/hooks'
@@ -33,7 +33,7 @@ import { ArrowRightIcon } from '@heroicons/react/outline'
 import BalancePanel from '../../features/inari/BalancePanel'
 import { useDerivedInariState, useInariState, useSelectedInariStrategy } from '../../state/inari/hooks'
 import NetworkGuard from '../../guards/Network'
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 import StrategyStepDisplay from '../../features/inari/StrategyStepDisplay'
 import StrategySelector from '../../features/inari/StrategySelector'
 import { Field } from '../../state/inari/types'
@@ -47,7 +47,7 @@ const Strategies = () => {
   return (
     <>
       <Head>
-        <title>Vesting | Sushi</title>
+        <title>Vesting | React</title>
         <meta name="description" content="Vesting..." />
       </Head>
       <Container maxWidth="5xl" className="flex flex-col gap-8 px-4 py-8">

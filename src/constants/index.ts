@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent } from '@sushiswap/sdk'
+import { ChainId, JSBI, Percent } from '@reactswap/sdk'
 import { binance, fortmatic, injected, portis, torus, walletconnect, walletlink } from '../connectors'
 
 import { AbstractConnector } from '@web3-react/abstract-connector'
@@ -290,13 +290,13 @@ export const BASE_SWAPPER: { [chainId in ChainId]?: string } = {
 // export const BORING_HELPER_ADDRESS = '0x11Ca5375AdAfd6205E41131A4409f182677996E6'
 
 export const ANALYTICS_URL: { [chainId in ChainId]?: string } = {
-  [ChainId.MAINNET]: 'https://analytics.sushi.com',
-  [ChainId.MATIC]: 'https://analytics-polygon.sushi.com',
-  [ChainId.FANTOM]: 'https://analytics-ftm.sushi.com',
-  [ChainId.BSC]: 'https://analytics-bsc.sushi.com',
-  [ChainId.XDAI]: 'https://analytics-xdai.sushi.com',
-  [ChainId.HARMONY]: 'https://analytics-harmony.sushi.com',
-  [ChainId.ARBITRUM]: 'https://analytics-arbitrum.sushi.com',
+  // [ChainId.MAINNET]: 'https://analytics.sushi.com',
+  // [ChainId.MATIC]: 'https://analytics-polygon.sushi.com',
+  // [ChainId.FANTOM]: 'https://analytics-ftm.sushi.com',
+  // [ChainId.BSC]: 'https://analytics-bsc.sushi.com',
+  // [ChainId.XDAI]: 'https://analytics-xdai.sushi.com',
+  // [ChainId.HARMONY]: 'https://analytics-harmony.sushi.com',
+  // [ChainId.ARBITRUM]: 'https://analytics-arbitrum.sushi.com',
 }
 
 export const EIP_1559_ACTIVATION_BLOCK: { [chainId in ChainId]?: number } = {

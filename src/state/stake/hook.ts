@@ -1,6 +1,6 @@
-// import { CurrencyAmount, JSBI, Token } from '@sushiswap/sdk'
+// import { CurrencyAmount, JSBI, Token } from '@reactswap/sdk'
 
-// import { t } from '@lingui/macro'
+import { t } from '@lingui/macro'
 // import { tryParseAmount } from '../../functions'
 // import useActiveWeb3React from '../../hooks/useActiveWeb3React'
 

@@ -2,7 +2,7 @@ import { ApprovalState, useApproveCallback } from '../../../hooks/useApproveCall
 import { ArrowDown, Plus } from 'react-feather'
 import { AutoRow, RowBetween } from '../../../components/Row'
 import { ButtonConfirmed, ButtonError } from '../../../components/Button'
-import { ChainId, Currency, NATIVE, Percent, WNATIVE } from '@sushiswap/sdk'
+import { ChainId, Currency, NATIVE, Percent, WNATIVE } from '@reactswap/sdk'
 import React, { useCallback, useMemo, useState } from 'react'
 import TransactionConfirmationModal, { ConfirmationModalContent } from '../../../modals/TransactionConfirmationModal'
 import { calculateGasMargin, calculateSlippageAmount } from '../../../functions/trade'
@@ -432,8 +432,8 @@ export default function Remove() {
   return (
     <Container id="remove-liquidity-page" className="py-4 space-y-4 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Remove Liquidity | Sushi</title>
-        <meta key="description" name="description" content="Remove liquidity from the SushiSwap AMM" />
+        <title>Remove Liquidity | React</title>
+        <meta key="description" name="description" content="Remove liquidity from the ReactSwap AMM" />
       </Head>
       <div className="px-4 mb-5">
         <NavLink href="/pool">

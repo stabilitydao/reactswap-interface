@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@sushiswap/sdk'
+import { ChainId, Token } from '@reactswap/sdk'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { formatPercent, maxAmountSpend, tryParseAmount } from '../../../functions'
 import { useAllTokens, useCurrency } from '../../../hooks/Tokens'
@@ -214,10 +214,10 @@ function LimitOrder() {
   return (
     <Container id="limit-order-page" className="py-4 space-y-6 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>{i18n._(t`Limit order`)} | Sushi</title>
+        <title>{i18n._(t`Limit order`)} | React</title>
         <meta
           name="description"
-          content="SushiSwap allows for swapping of ERC20 compatible tokens across multiple networks"
+          content="ReactSwap allows for swapping of ERC20 compatible tokens across multiple networks"
         />
       </Head>
       <TokenWarningModal

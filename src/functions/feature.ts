@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 
 export enum Feature {
   AMM = 'AMM',

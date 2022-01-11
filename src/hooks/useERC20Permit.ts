@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Percent, Token, TradeType, Trade as V2Trade } from '@sushiswap/sdk'
+import { Currency, CurrencyAmount, JSBI, Percent, Token, TradeType, Trade as V2Trade } from '@reactswap/sdk'
 import { DAI, SUSHI, USDC } from '../constants/tokens'
 import { useMemo, useState } from 'react'
 
@@ -268,7 +268,7 @@ export function useERC20Permit(
 
 const REMOVE_V2_LIQUIDITY_PERMIT_INFO: PermitInfo = {
   version: '1',
-  name: 'SushiSwap LP Token',
+  name: 'ReactSwap LP Token',
   type: PermitType.AMOUNT,
 }
 

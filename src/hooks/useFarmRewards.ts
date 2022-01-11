@@ -20,7 +20,7 @@ import {
   useFusePrice,
 } from '../services/graph'
 
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 import { aprToApy } from '../functions/convert/apyApr'
 import { getAddress } from '@ethersproject/address'
 import useActiveWeb3React from './useActiveWeb3React'

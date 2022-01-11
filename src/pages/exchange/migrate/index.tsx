@@ -1,6 +1,6 @@
 import { ApprovalState, useApproveCallback } from '../../../hooks/useApproveCallback'
 import Button, { ButtonConfirmed } from '../../../components/Button'
-import { ChainId, JSBI } from '@sushiswap/sdk'
+import { ChainId, JSBI } from '@reactswap/sdk'
 import { ChevronDownIcon, XIcon } from '@heroicons/react/outline'
 import React, { useCallback, useEffect, useState } from 'react'
 import { formatUnits, parseUnits } from '@ethersproject/units'
@@ -251,7 +251,7 @@ const MigrateButtons = ({ state, exchange }: { state: MigrateState; exchange: st
       {error.message && error.code !== 4001 && <div className="font-medium text-center text-red">{error.message}</div>}
       <div className="text-sm text-center text-low-emphesis">
         {i18n._(
-          t`Your ${exchange} ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity will become SushiSwap ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity.`
+          t`Your ${exchange} ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity will become ReactSwap ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity.`
         )}
       </div>
     </div>
@@ -313,7 +313,7 @@ export default function Migrate() {
   return (
     <Container id="migrate-page" className="py-4 space-y-6 md:py-8 lg:py-12" maxWidth="lg">
       <Head>
-        <title>Migrate | Sushi</title>
+        <title>Migrate | React</title>
         <meta key="description" name="description" content="Migrate your liquidity to SushiSwap." />
       </Head>
 

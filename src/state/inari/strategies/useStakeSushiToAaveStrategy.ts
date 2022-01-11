@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { AXSUSHI, SUSHI } from '../../../constants'
-import { ChainId, SUSHI_ADDRESS } from '@sushiswap/sdk'
+import { ChainId, REACT_ADDRESS } from '@reactswap/sdk'
 import { useActiveWeb3React } from '../../../hooks'
 import { useTokenBalances } from '../../wallet/hooks'
 import { StrategyGeneralInfo, StrategyHook, StrategyTokenDefinitions } from '../types'
@@ -12,7 +12,7 @@ export const general: StrategyGeneralInfo = {
   steps: ['SUSHI', 'xSUSHI', 'Aave'],
   zapMethod: 'stakeSushiToAave',
   unzapMethod: 'unstakeSushiFromAave',
-  description: t`Stake SUSHI for xSUSHI and deposit into Aave in one click. xSUSHI in Aave (aXSUSHI) can be lent or used as collateral for borrowing.`,
+  description: /*t*/ `Stake SUSHI for xSUSHI and deposit into Aave in one click. xSUSHI in Aave (aXSUSHI) can be lent or used as collateral for borrowing.`,
   inputSymbol: 'SUSHI',
   outputSymbol: 'xSUSHI in Aave',
 }
@@ -20,7 +20,7 @@ export const general: StrategyGeneralInfo = {
 export const tokenDefinitions: StrategyTokenDefinitions = {
   inputToken: {
     chainId: ChainId.MAINNET,
-    address: SUSHI_ADDRESS[ChainId.MAINNET],
+    address: REACT_ADDRESS[ChainId.MAINNET],
     decimals: 18,
     symbol: 'SUSHI',
   },

@@ -8,7 +8,7 @@ import {
   Token,
   TradeType,
   Trade as V2Trade,
-} from '@sushiswap/sdk'
+} from '@reactswap/sdk'
 import { ApprovalState, useApproveCallbackFromTrade } from '../../../hooks/useApproveCallback'
 import { ArrowWrapper, BottomGrouping, SwapCallbackError } from '../../../features/swap/styleds'
 import { AutoRow, RowBetween, RowFixed } from '../../../components/Row'
@@ -455,11 +455,11 @@ export default function Swap({ banners }) {
   return (
     <Container id="swap-page" className="py-4 md:py-8 lg:py-12">
       <Head>
-        <title>{i18n._(t`SushiSwap`)} | Sushi</title>
+        <title>ReactSwap | React</title>
         <meta
           key="description"
           name="description"
-          content="SushiSwap allows for swapping of ERC20 compatible tokens across multiple networks"
+          content="ReactSwap allows for swapping of ERC20 compatible tokens across multiple networks"
         />
       </Head>
       <TokenWarningModal

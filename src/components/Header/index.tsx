@@ -1,4 +1,4 @@
-import { ChainId, Currency, NATIVE, SUSHI_ADDRESS } from '@sushiswap/sdk'
+import { ChainId, Currency, NATIVE, REACT_ADDRESS, BAR_ADDRESS } from '@reactswap/sdk'
 import React, { useEffect, useState } from 'react'
 
 import { ANALYTICS_URL } from '../../constants'
@@ -36,7 +36,7 @@ function AppBar(): JSX.Element {
             <div className="px-4 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <Image src="/logo-santa.png" alt="Sushi" width="32px" height="32px" />
+                  <Image src="/logo.png" alt="Sushi" width="32px" height="32px" />
                   <div className="hidden sm:block sm:ml-4">
                     <div className="flex space-x-2">
                       {/* <Buy /> */}
@@ -141,8 +141,8 @@ function AppBar(): JSX.Element {
                                 const params: any = {
                                   type: 'ERC20',
                                   options: {
-                                    address: '0x8798249c2e607446efb7ad49ec89dd1865ff4272',
-                                    symbol: 'XSUSHI',
+                                    address: BAR_ADDRESS[chainId],
+                                    symbol: 'xREACT',
                                     decimals: 18,
                                     image:
                                       'https://raw.githubusercontent.com/sushiswap/logos/main/network/ethereum/0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272.jpg',
@@ -155,7 +155,7 @@ function AppBar(): JSX.Element {
                                   })
                                   .then((success) => {
                                     if (success) {
-                                      console.log('Successfully added XSUSHI to MetaMask')
+                                      console.log('Successfully added xREACT to MetaMask')
                                     } else {
                                       throw new Error('Something went wrong.')
                                     }
@@ -177,20 +177,19 @@ function AppBar(): JSX.Element {
                       </>
                     )}
 
-                    {chainId && chainId in SUSHI_ADDRESS && library && library.provider.isMetaMask && (
+                    {chainId && chainId in REACT_ADDRESS && library && library.provider.isMetaMask && (
                       <>
-                        <QuestionHelper text={i18n._(t`Add SUSHI to your MetaMask wallet`)}>
+                        <QuestionHelper text={i18n._(t`Add REACT to your MetaMask wallet`)}>
                           <div
                             className="hidden rounded-md cursor-pointer sm:inline-flex bg-dark-900 hover:bg-dark-800 p-0.5"
                             onClick={() => {
                               const params: any = {
                                 type: 'ERC20',
                                 options: {
-                                  address: SUSHI_ADDRESS[chainId],
-                                  symbol: 'SUSHI',
+                                  address: REACT_ADDRESS[chainId],
+                                  symbol: 'REACT',
                                   decimals: 18,
-                                  image:
-                                    'https://raw.githubusercontent.com/sushiswap/logos/main/network/ethereum/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2.jpg',
+                                  image: 'https://stabilitydao.org/reactswap.png',
                                 },
                               }
                               if (library && library.provider.isMetaMask && library.provider.request) {
@@ -201,7 +200,7 @@ function AppBar(): JSX.Element {
                                   })
                                   .then((success) => {
                                     if (success) {
-                                      console.log('Successfully added SUSHI to MetaMask')
+                                      console.log('Successfully added REACT to MetaMask')
                                     } else {
                                       throw new Error('Something went wrong.')
                                     }

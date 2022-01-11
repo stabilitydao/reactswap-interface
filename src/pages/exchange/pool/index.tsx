@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, JSBI, NATIVE, Pair } from '@sushiswap/sdk'
+import { ChainId, CurrencyAmount, JSBI, NATIVE, Pair } from '@reactswap/sdk'
 import React, { useMemo } from 'react'
 import { classNames, currencyId } from '../../../functions'
 import { toV2LiquidityToken, useTrackedTokenPairs } from '../../../state/user/hooks'
@@ -9,7 +9,7 @@ import Back from '../../../components/Back'
 import Button from '../../../components/Button'
 import Card from '../../../components/Card'
 import Container from '../../../components/Container'
-import { Currency } from '@sushiswap/sdk'
+import { Currency } from '@reactswap/sdk'
 import Dots from '../../../components/Dots'
 import Empty from '../../../components/Empty'
 import ExternalLink from '../../../components/ExternalLink'
@@ -89,11 +89,11 @@ export default function Pool() {
   return (
     <Container id="pool-page" className="py-4 space-y-6 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Pool | Sushi</title>
+        <title>Pool | React</title>
         <meta
           key="description"
           name="description"
-          content="SushiSwap liquidity pools are markets for trades between the two tokens, you can provide these tokens and become a liquidity provider to earn 0.25% of fees from trades."
+          content="ReactSwap liquidity pools are markets for trades between the two tokens, you can provide these tokens and become a liquidity provider to earn 0.25% of fees from trades."
         />
       </Head>
 

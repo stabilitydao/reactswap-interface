@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Token } from '@sushiswap/sdk'
+import { ChainId, CurrencyAmount, Token } from '@reactswap/sdk'
 import { useBoringHelperContract, useDashboardContract, useQuickSwapFactoryContract } from './useContract'
 import { useCallback, useEffect, useRef, useState } from 'react'
 

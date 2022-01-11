@@ -1,7 +1,7 @@
 import ARBITRUM from './arbitrum'
 import AVALANCHE from './avalanche'
 import BSC from './bsc'
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 import HECO from './heco'
 import KOVAN from './kovan'
 import MAINNET from './mainnet'

@@ -8,7 +8,7 @@ import {
 } from '../queries/bentobox'
 import { getFraction, toAmount } from '../../../functions'
 
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 import { GRAPH_HOST } from '../constants'
 import { request } from 'graphql-request'
 import { getTokenSubset } from './exchange'

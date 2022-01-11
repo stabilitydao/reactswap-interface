@@ -1,4 +1,4 @@
-import { ChainId, Ether, SUSHI_ADDRESS, Token, WETH9, WNATIVE } from '@sushiswap/sdk'
+import { ChainId, Ether, REACT_ADDRESS, Token, WETH9, WNATIVE } from '@reactswap/sdk'
 
 import { SupportedChainId } from '../chains'
 
@@ -296,24 +296,24 @@ type ChainTokenMap = {
 
 // SUSHI
 export const SUSHI: ChainTokenMap = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, SUSHI_ADDRESS[ChainId.MAINNET], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, SUSHI_ADDRESS[ChainId.ROPSTEN], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, SUSHI_ADDRESS[ChainId.RINKEBY], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, SUSHI_ADDRESS[ChainId.GÖRLI], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, SUSHI_ADDRESS[ChainId.KOVAN], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.MATIC]: new Token(ChainId.MATIC, SUSHI_ADDRESS[ChainId.MATIC], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.FANTOM]: new Token(ChainId.FANTOM, SUSHI_ADDRESS[ChainId.FANTOM], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.XDAI]: new Token(ChainId.XDAI, SUSHI_ADDRESS[ChainId.XDAI], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.BSC]: new Token(ChainId.BSC, SUSHI_ADDRESS[ChainId.BSC], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.ARBITRUM]: new Token(ChainId.ARBITRUM, SUSHI_ADDRESS[ChainId.ARBITRUM], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, SUSHI_ADDRESS[ChainId.AVALANCHE], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.OKEX]: new Token(ChainId.OKEX, SUSHI_ADDRESS[ChainId.OKEX], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.HARMONY]: new Token(ChainId.HARMONY, SUSHI_ADDRESS[ChainId.HARMONY], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.HECO]: new Token(ChainId.HECO, SUSHI_ADDRESS[ChainId.HECO], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.CELO]: new Token(ChainId.CELO, SUSHI_ADDRESS[ChainId.CELO], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.MOONRIVER]: new Token(ChainId.MOONRIVER, SUSHI_ADDRESS[ChainId.MOONRIVER], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.TELOS]: new Token(ChainId.TELOS, SUSHI_ADDRESS[ChainId.TELOS], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.FUSE]: new Token(ChainId.FUSE, SUSHI_ADDRESS[ChainId.FUSE], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.MAINNET]: new Token(ChainId.MAINNET, REACT_ADDRESS[ChainId.MAINNET], 18, 'SUSHI', 'SushiToken'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, REACT_ADDRESS[ChainId.ROPSTEN], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, REACT_ADDRESS[ChainId.RINKEBY], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, REACT_ADDRESS[ChainId.GÖRLI], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.KOVAN]: new Token(ChainId.KOVAN, REACT_ADDRESS[ChainId.KOVAN], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.MATIC]: new Token(ChainId.MATIC, REACT_ADDRESS[ChainId.MATIC], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.FANTOM]: new Token(ChainId.FANTOM, REACT_ADDRESS[ChainId.FANTOM], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.XDAI]: new Token(ChainId.XDAI, REACT_ADDRESS[ChainId.XDAI], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.BSC]: new Token(ChainId.BSC, REACT_ADDRESS[ChainId.BSC], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.ARBITRUM]: new Token(ChainId.ARBITRUM, REACT_ADDRESS[ChainId.ARBITRUM], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.AVALANCHE]: new Token(ChainId.AVALANCHE, REACT_ADDRESS[ChainId.AVALANCHE], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.OKEX]: new Token(ChainId.OKEX, REACT_ADDRESS[ChainId.OKEX], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.HARMONY]: new Token(ChainId.HARMONY, REACT_ADDRESS[ChainId.HARMONY], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.HECO]: new Token(ChainId.HECO, REACT_ADDRESS[ChainId.HECO], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.CELO]: new Token(ChainId.CELO, REACT_ADDRESS[ChainId.CELO], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.MOONRIVER]: new Token(ChainId.MOONRIVER, REACT_ADDRESS[ChainId.MOONRIVER], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.TELOS]: new Token(ChainId.TELOS, REACT_ADDRESS[ChainId.TELOS], 18, 'SUSHI', 'SushiToken'),
+  // [ChainId.FUSE]: new Token(ChainId.FUSE, REACT_ADDRESS[ChainId.FUSE], 18, 'SUSHI', 'SushiToken'),
 }
 
 export const WETH9_EXTENDED: { [chainId: number]: Token } = {

@@ -60,7 +60,7 @@ import {
   YFI,
 } from './tokens'
 // a list of tokens by chain
-import { ChainId, Currency, Token, WNATIVE } from '@sushiswap/sdk'
+import { ChainId, Currency, Token, WNATIVE } from '@reactswap/sdk'
 
 import { SupportedChainId } from './chains'
 

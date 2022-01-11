@@ -14,11 +14,11 @@ import {
   MULTICALL2_ADDRESS,
   ROUTER_ADDRESS,
   SUSHISWAP_SWAPPER_ADDRESS,
-  SUSHI_ADDRESS,
+  REACT_ADDRESS,
   TIMELOCK_ADDRESS,
   WNATIVE,
   ZAPPER_ADDRESS,
-} from '@sushiswap/sdk'
+} from '@reactswap/sdk'
 import {
   ARGENT_WALLET_DETECTOR_ABI,
   ARGENT_WALLET_DETECTOR_MAINNET_ADDRESS,
@@ -164,7 +164,7 @@ export function useMulticall2Contract() {
 
 export function useSushiContract(withSignerIfPossible = true): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId && SUSHI_ADDRESS[chainId], SUSHI_ABI, withSignerIfPossible)
+  return useContract(chainId && REACT_ADDRESS[chainId], SUSHI_ABI, withSignerIfPossible)
 }
 
 export function useMasterChefContract(withSignerIfPossible?: boolean): Contract | null {

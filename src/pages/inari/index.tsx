@@ -13,7 +13,7 @@ import { ArrowRightIcon } from '@heroicons/react/outline'
 import BalancePanel from '../../features/inari/BalancePanel'
 import { useDerivedInariState, useInariState, useSelectedInariStrategy } from '../../state/inari/hooks'
 import NetworkGuard from '../../guards/Network'
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@reactswap/sdk'
 import StrategyStepDisplay from '../../features/inari/StrategyStepDisplay'
 import StrategySelector from '../../features/inari/StrategySelector'
 import { Field } from '../../state/inari/types'
@@ -27,7 +27,7 @@ const Inari = () => {
   return (
     <>
       <Head>
-        <title>Inari | Sushi</title>
+        <title>Inari | React</title>
         <meta name="description" content="Inari..." />
       </Head>
       <Container maxWidth="5xl" className="flex flex-col gap-8 py-8 px-4">

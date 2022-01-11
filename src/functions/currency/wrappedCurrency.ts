@@ -1,4 +1,4 @@
-import { Currency, NATIVE, WNATIVE } from '@sushiswap/sdk'
+import { Currency, NATIVE, WNATIVE } from '@reactswap/sdk'
 import { supportedChainId } from '../chain'
 
 export function unwrappedToken(currency: Currency): Currency {

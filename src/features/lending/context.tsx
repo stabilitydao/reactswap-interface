@@ -1,4 +1,4 @@
-import { ChainId, Currency, KASHI_ADDRESS, NATIVE, Token, USDC, WNATIVE } from '@sushiswap/sdk'
+import { ChainId, Currency, KASHI_ADDRESS, NATIVE, Token, USDC, WNATIVE } from '@reactswap/sdk'
 import React, { createContext, useCallback, useContext, useEffect, useReducer } from 'react'
 import { ZERO, e10, maximum, minimum } from '../../functions/math'
 import {

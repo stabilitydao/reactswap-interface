@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { BENTOBOX_ADDRESS, CurrencyAmount, Token, WNATIVE } from '@sushiswap/sdk'
+import { BENTOBOX_ADDRESS, CurrencyAmount, Token, WNATIVE } from '@reactswap/sdk'
 import { BentoBalance, useBentoBalances } from '../../state/bentobox/hooks'
 import React, { useState } from 'react'
 import { useFuse, useSortableData } from '../../hooks'
@@ -43,7 +43,7 @@ function Balances() {
   return (
     <>
       <Head>
-        <title>Balances | Sushi</title>
+        <title>Balances | React</title>
         <meta key="description" name="description" content="" />
       </Head>
       <Card

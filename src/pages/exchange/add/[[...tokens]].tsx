@@ -1,7 +1,7 @@
 import { ApprovalState, useApproveCallback } from '../../../hooks/useApproveCallback'
 import { AutoRow, RowBetween } from '../../../components/Row'
 import Button, { ButtonError } from '../../../components/Button'
-import { Currency, CurrencyAmount, Percent, WNATIVE, currencyEquals } from '@sushiswap/sdk'
+import { Currency, CurrencyAmount, Percent, WNATIVE, currencyEquals } from '@reactswap/sdk'
 import { ONE_BIPS, ZERO_PERCENT } from '../../../constants'
 import React, { useCallback, useState } from 'react'
 import TransactionConfirmationModal, { ConfirmationModalContent } from '../../../modals/TransactionConfirmationModal'
@@ -316,11 +316,11 @@ export default function Add() {
   return (
     <>
       <Head>
-        <title>Add Liquidity | Sushi</title>
+        <title>Add Liquidity | React</title>
         <meta
           key="description"
           name="description"
-          content="Add liquidity to the SushiSwap AMM to enable gas optimised and low slippage trades across countless networks"
+          content="Add liquidity to the ReactSwap AMM to enable gas optimised and low slippage trades across countless networks"
         />
       </Head>
 

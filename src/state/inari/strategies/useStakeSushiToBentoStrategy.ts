@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { SUSHI, XSUSHI } from '../../../constants'
-import { ChainId, SUSHI_ADDRESS } from '@sushiswap/sdk'
+import { ChainId, REACT_ADDRESS } from '@reactswap/sdk'
 import { tryParseAmount } from '../../../functions'
 import { useBentoBalance } from '../../bentobox/hooks'
 import { useActiveWeb3React } from '../../../hooks'
@@ -24,7 +24,7 @@ export const general: StrategyGeneralInfo = {
 export const tokenDefinitions: StrategyTokenDefinitions = {
   inputToken: {
     chainId: ChainId.MAINNET,
-    address: SUSHI_ADDRESS[ChainId.MAINNET],
+    address: REACT_ADDRESS[ChainId.MAINNET],
     decimals: 18,
     symbol: 'SUSHI',
   },
