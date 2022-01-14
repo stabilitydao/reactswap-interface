@@ -11,45 +11,15 @@ import NavLink from '../NavLink'
 
 const items = (i18n: I18n) => [
   {
-    name: i18n._(t`Docs`),
-    description: i18n._(t`Documentation for users of Sushi.`),
-    href: 'https://docs.sushi.com',
-    external: true,
-  },
-  {
-    name: i18n._(t`Dev`),
-    description: i18n._(t`Documentation for developers of Sushi.`),
-    href: 'https://dev.sushi.com',
-    external: true,
-  },
-  {
     name: i18n._(t`Open Source`),
-    description: i18n._(t`Sushi is a supporter of Open Source.`),
-    href: 'https://github.com/sushiswap',
+    description: i18n._(t`ReactSwap is a supporter of Open Source.`),
+    href: 'https://github.com/stabilitydao',
     external: true,
   },
   {
-    name: i18n._(t`Tools`),
-    description: i18n._(t`Tools to optimize your workflow.`),
-    href: '/tools',
-    external: false,
-  },
-  {
-    name: i18n._(t`Discord`),
-    description: i18n._(t`Join the community on Discord.`),
-    href: 'https://discord.gg/NVPXN4e',
-    external: true,
-  },
-  {
-    name: i18n._(t`Vesting`),
-    description: i18n._(t`Weekly unlocks from the vesting period.`),
-    href: '/vesting',
-    external: false,
-  },
-  {
-    name: i18n._(t`Sushi Relay`),
-    description: i18n._(t`MEV Protection & Gas Refund Solution`),
-    href: 'https://docs.openmev.org',
+    name: i18n._(t`Telegram`),
+    description: i18n._(t`Join the community on Telegram.`),
+    href: 'https://t.me/stabilitydao',
     external: true,
   },
 ]

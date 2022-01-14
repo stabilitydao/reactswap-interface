@@ -67,7 +67,7 @@ import WETH9_ABI from '../constants/abis/weth.json'
 import ZAPPER_ABI from '../constants/abis/zapper.json'
 import ZENKO_ABI from '../constants/abis/zenko.json'
 import { getContract } from '../functions/contract'
-import { getVerifyingContract } from 'limitorderv2-sdk'
+// import { getVerifyingContract } from 'limitorderv2-sdk'
 import { useActiveWeb3React } from './useActiveWeb3React'
 import { useMemo } from 'react'
 
@@ -633,7 +633,7 @@ export function useMeowshiContract(withSignerIfPossible?: boolean): Contract | n
 
 export function useLimitOrderContract(withSignerIfPossibe?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(getVerifyingContract(chainId), LIMIT_ORDER_ABI, withSignerIfPossibe)
+  return useContract(undefined/*getVerifyingContract(chainId)*/, LIMIT_ORDER_ABI, withSignerIfPossibe)
 }
 
 export function useLimitOrderHelperContract(withSignerIfPossible?: boolean): Contract | null {

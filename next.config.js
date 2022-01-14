@@ -86,7 +86,7 @@ module.exports = withBundleAnalyzer(
           source: '/swap/:token*',
           destination: '/exchange/swap/:token*',
         },
-        {
+        /*{
           source: '/limit-order',
           destination: '/exchange/limit-order',
         },
@@ -97,7 +97,7 @@ module.exports = withBundleAnalyzer(
         {
           source: '/open-order',
           destination: '/exchange/open-order',
-        },
+        },*/
         {
           source: '/migrate',
           destination: '/exchange/migrate',

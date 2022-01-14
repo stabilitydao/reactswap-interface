@@ -294,10 +294,10 @@ type ChainTokenMap = {
   readonly [chainId in ChainId]?: Token
 }
 
-// SUSHI
+// REACT
 export const SUSHI: ChainTokenMap = {
   // [ChainId.MAINNET]: new Token(ChainId.MAINNET, REACT_ADDRESS[ChainId.MAINNET], 18, 'SUSHI', 'SushiToken'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, REACT_ADDRESS[ChainId.ROPSTEN], 18, 'SUSHI', 'SushiToken'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, REACT_ADDRESS[ChainId.ROPSTEN], 18, 'REACT', 'ReactSwap'),
   // [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, REACT_ADDRESS[ChainId.RINKEBY], 18, 'SUSHI', 'SushiToken'),
   // [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, REACT_ADDRESS[ChainId.GÖRLI], 18, 'SUSHI', 'SushiToken'),
   // [ChainId.KOVAN]: new Token(ChainId.KOVAN, REACT_ADDRESS[ChainId.KOVAN], 18, 'SUSHI', 'SushiToken'),

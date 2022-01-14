@@ -30,7 +30,7 @@ const PERMITTABLE_TOKENS: {
     [checksummedTokenAddress: string]: PermitInfo
   }
 } = {
-  [1]: {
+  /*[1]: {
     [USDC.address]: { type: PermitType.AMOUNT, name: 'USD Coin', version: '2' },
     [DAI.address]: {
       type: PermitType.ALLOWED,
@@ -46,21 +46,21 @@ const PERMITTABLE_TOKENS: {
       version: '1',
     },
     [SUSHI[4].address]: { type: PermitType.AMOUNT, name: 'SushiSwap' },
-  },
+  },*/
   [3]: {
-    [SUSHI[3].address]: { type: PermitType.AMOUNT, name: 'SushiSwap' },
+    [SUSHI[3].address]: { type: PermitType.AMOUNT, name: 'ReactSwap' },
     ['0x07865c6E87B9F70255377e024ace6630C1Eaa37F']: {
       type: PermitType.AMOUNT,
       name: 'USD Coin',
       version: '2',
     },
   },
-  [5]: {
+  /*[5]: {
     [SUSHI[5].address]: { type: PermitType.AMOUNT, name: 'SushiSwap' },
   },
   [42]: {
     [SUSHI[42].address]: { type: PermitType.AMOUNT, name: 'SushiSwap' },
-  },
+  },*/
 }
 
 export enum UseERC20PermitState {

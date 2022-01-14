@@ -210,8 +210,8 @@ function AppBar(): JSX.Element {
                             }}
                           >
                             <Image
-                              src="/images/tokens/sushi-square.jpg"
-                              alt="SUSHI"
+                              src="/android-chrome-96x96.png"
+                              alt="REACT"
                               width="38px"
                               height="38px"
                               objectFit="contain"

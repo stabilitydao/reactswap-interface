@@ -243,6 +243,10 @@ export function useTrackedTokenPairs(): [Token, Token][] {
   // pinned pairs
   const pinnedPairs = useMemo(() => (chainId ? PINNED_PAIRS[chainId] ?? [] : []), [chainId])
 
+  console.log('useTrackedTokenPairs(): tokens', tokens)
+  console.log('useTrackedTokenPairs(): pinnedPairs', pinnedPairs)
+  console.log('useTrackedTokenPairs(): BASES_TO_TRACK_LIQUIDITY_FOR[chainId]', BASES_TO_TRACK_LIQUIDITY_FOR[chainId])
+
   // pairs for every token against every base
   const generatedPairs: [Token, Token][] = useMemo(
     () =>
@@ -267,6 +271,10 @@ export function useTrackedTokenPairs(): [Token, Token][] {
         : [],
     [tokens, chainId]
   )
+
+  console.log('useTrackedTokenPairs(): generatedPairs', generatedPairs.map(p => {
+    return p[0].symbol + ' / ' + p[1].symbol
+  }))
 
   // pairs saved by users
   const savedSerializedPairs = useAppSelector(({ user: { pairs } }) => pairs)

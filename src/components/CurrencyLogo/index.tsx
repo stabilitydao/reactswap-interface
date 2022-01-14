@@ -100,6 +100,7 @@ const TelosLogo =
 
 const LOGO: { readonly [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: EthereumLogo,
+  [ChainId.ROPSTEN]: EthereumLogo,
   [ChainId.FANTOM]: FantomLogo,
   [ChainId.FANTOM_TESTNET]: FantomLogo,
   [ChainId.MATIC]: MaticLogo,
