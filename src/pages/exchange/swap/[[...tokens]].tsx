@@ -462,6 +462,9 @@ export default function Swap({ banners }) {
           content="ReactSwap allows for swapping of ERC20 compatible tokens across multiple networks"
         />
       </Head>
+      <div className="m-10 text-3xl text-cyan-blue">
+        ReactSwap prototype v0
+      </div>
       <TokenWarningModal
         isOpen={importTokensNotInDefault.length > 0 && !dismissTokenWarning}
         tokens={importTokensNotInDefault}

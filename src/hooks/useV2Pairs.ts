@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, FACTORY_ADDRESS, Pair, computePairAddress } from '@reactswap/sdk'
+import { Currency, CurrencyAmount, FACTORY_ADDRESS, Pair, computePairAddress, INIT_CODE_HASH } from '@reactswap/sdk'
 
 import IUniswapV2PairABI from '@sushiswap/core/abi/IUniswapV2Pair.json'
 import { Interface } from '@ethersproject/abi'
@@ -23,8 +23,6 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
-        console.log(tokenA, tokenB)
-        console.log(FACTORY_ADDRESS[tokenA.chainId])
         return tokenA &&
           tokenB &&
           tokenA.chainId === tokenB.chainId &&
@@ -43,9 +41,6 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
   console.log('pairAddresses:', pairAddresses )
 
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
-
-  // console.log(results)
-  // console.log('r')
 
   return useMemo(() => {
     return results.map((result, i) => {

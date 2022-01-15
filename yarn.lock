@@ -2626,9 +2626,9 @@
   integrity sha512-p8WZbxwLTQzMBPGGmSITps2vxgzit9jsIcwGXNXG3LUxeu/J25EAnqBWt+A5tgzjHkWrfXIkKv8FKoXv6wnEQQ==
 
 "@reactswap/sdk@^1.0.0-develop":
-  version "1.0.0-develop.3"
-  resolved "https://registry.yarnpkg.com/@reactswap/sdk/-/sdk-1.0.0-develop.3.tgz#3aed824f022178f4a493e87f55cf03cce7f55801"
-  integrity sha512-yRnr0v8v6CFy2Nzk00Em/oYv/k/wvrbqMiN5tDK9j/LGIQjRGCzLbW9pWSbzHSyyeYtnsnOPX8XUiJLy6BR4SA==
+  version "1.0.0-develop.6"
+  resolved "https://registry.yarnpkg.com/@reactswap/sdk/-/sdk-1.0.0-develop.6.tgz#7e913265d8fa3b5c14d4dcb27e94f5a8519327ec"
+  integrity sha512-v9LDIvHvRiqzzWsBgWX0aiS5J3xSmn05Y9IcI9aKCySE+xgz8sa8qO6984LLoY3xuqnSAIlaexJuipjNORSGqQ==
   dependencies:
     "@ethersproject/abi" "^5.4.0"
     "@ethersproject/abstract-signer" "^5.4.0"
